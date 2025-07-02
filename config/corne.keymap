@@ -28,9 +28,7 @@
     };
 };
 
-&rgb {
-    status = "okay";
-};
+
 
 &rgb_ug_color0 {
     hue = <0>;    // Red
