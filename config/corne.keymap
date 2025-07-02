@@ -14,6 +14,43 @@
 };
 
 / {
+    behaviors {
+        rgb_ug: rgb_underglow {
+            compatible = "zmk,behavior-rgb-underglow";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            bindings = <&rgb_ug_color0>, <&rgb_ug_color1>, <&rgb_ug_color2>; // Add more as needed
+        };
+    };
+
+    rgb_underglow {
+        colors = <0>, <1>, <2>; // Add more as needed
+    };
+};
+
+&rgb {
+    status = "okay";
+};
+
+&rgb_ug_color0 {
+    hue = <0>;    // Red
+    sat = <100>;  // Full saturation
+    val = <100>;  // Full brightness
+};
+
+&rgb_ug_color1 {
+    hue = <120>;  // Green
+    sat = <100>;
+    val = <100>;
+};
+
+&rgb_ug_color2 {
+    hue = <240>;  // Blue
+    sat = <100>;
+    val = <100>;
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -58,4 +95,9 @@
                         >;
                 };
         };
+
+        layer_indicator {
+        compatible = "zmk,layer-indicator";
+        layer-changed = <&rgb_ug>;
+    };
 };
