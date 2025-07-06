@@ -61,7 +61,7 @@
 
                 //                  | GUI   | Lay2  | SPC      |   | ENT   | Lay1  | ALT     |
                                     &kp LGUI  &to 2  &kp SPACE      &kp RET  &to 1   &kp RALT
-            rgb_layer_default
+            &rgb_layer_default
             >;
         };
 
@@ -86,7 +86,7 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
-            rgb_layer1
+            &rgb_layer1
             >;
         };
 
@@ -102,7 +102,7 @@
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans          &trans    &trans    &trans    &trans     &trans  &trans
                                               &kp LGUI         &trans           &kp SPACE       &kp RET   &trans    &kp RALT
-            rgb_layer2
+            &rgb_layer2
             >;
         };
     };
