@@ -12,14 +12,13 @@
 #include <dt-bindings/zmk/rgb.h>
 
 
-&led_strip { chain-length = <27>; };
-
 / {
     rgb_underglow: rgb_underglow {
         compatible = "zmk,rgb-underglow";
         status = "okay";
         label = "RGB_UNDERGLOW";
-        color-map = <0x000000>; // Default: Black (off)
+        chain-length = <27>; // Match your LED count
+        color-map = <0x000000>; // Initial color (optional)
     };
 };
 
