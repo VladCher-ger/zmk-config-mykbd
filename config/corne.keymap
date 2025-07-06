@@ -90,7 +90,7 @@
 &HT LEFT_BRACE LEFT_PARENTHESIS  &HT EXCLAMATION Q   &HT AT_SIGN W           &HT HASH E          &HT DOLLAR R          &HT PERCENT T    &HT CARET Y  &HT AMPERSAND U        &HT ASTERISK I       &HT MINUS O              &HT EQUAL P                  &HT RIGHT_BRACE RIGHT_PARENTHESIS
 &kp MINUS                        &HR_MOD LEFT_ALT A  &HR_MOD LEFT_CONTROL S  &HR_MOD LEFT_GUI D  &HR_MOD LEFT_SHIFT F  &kp G            &kp H        &HR_MOD RIGHT_SHIFT J  &HR_MOD RIGHT_WIN K  &HR_MOD RIGHT_CONTROL L  &HR_MOD RIGHT_ALT SEMICOLON  &kp SQT
 &kp LEFT_BRACKET                 &kp Z               &kp X                   &kp C               &kp V                 &kp B            &kp N        &kp M                  &kp COMMA            &kp DOT                  &kp FSLH                     &kp RIGHT_BRACKET
-                                                                             &kp TAB             &RGB_layer2           &kp SPACE        &kp RET      &RGB_layer1            &kp ESCAPE
+                                                                             &kp TAB             &RGB_layer1           &kp SPACE        &kp RET      &RGB_layer2            &kp ESCAPE
             >;
         };
 
