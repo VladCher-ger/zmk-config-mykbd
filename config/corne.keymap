@@ -14,7 +14,7 @@
 
 &led_strip { chain-length = <27>; };
 
-#define rgb_ug ug;
+#define rgb_ug ug
 
 #endif
 
