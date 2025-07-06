@@ -26,22 +26,24 @@
         };
     };
 
+
+
     behaviors {
         // Define RGB behaviors for each layer
         rgb_layer_default: rgb_layer_default {
             compatible = "zmk,behavior-rgb-underglow";
             #binding-cells = <2>;
-            bindings = <&rgb_ug RGB_COLOR_HSV(0, 0, 0)>;  // Default: OFF (or set a base color)
+            rgb-values = <&rgb_ug RGB_COLOR_HSV(0, 0, 0)>;  // Default: OFF (or set a base color)
         };
         rgb_layer1: rgb_layer1 {
             compatible = "zmk,behavior-rgb-underglow";
             #binding-cells = <2>;
-            bindings = <&rgb_ug RGB_COLOR_HSV(120, 100, 100)>;  // Layer 1: Green
+            rgb-values = <&rgb_ug RGB_COLOR_HSV(120, 100, 100)>;  // Layer 1: Green
         };
         rgb_layer2: rgb_layer2 {
             compatible = "zmk,behavior-rgb-underglow";
             #binding-cells = <2>;
-            bindings = <&rgb_ug RGB_COLOR_HSV(240, 100, 100)>;  // Layer 2: Blue
+            rgb-values = <&rgb_ug RGB_COLOR_HSV(240, 100, 100)>;  // Layer 2: Blue
         };
     };
 
