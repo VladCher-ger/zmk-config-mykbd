@@ -14,7 +14,15 @@
 
 &led_strip { chain-length = <27>; };
 
-
+/ {
+    rgb_underglow: rgb_underglow {
+        compatible = "zmk,rgb-underglow";
+        status = "okay";
+        label = "RGB_UNDERGLOW";
+        chain-length = <10>; // Number of LEDs
+        color-map = <0x000000>; // Default: Black (off)
+    };
+};
 
 / {
     combos {
