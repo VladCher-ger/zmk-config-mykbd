@@ -16,7 +16,7 @@
         compatible = "zmk,combos";
 
         settingslayer {
-            bindings = <&to 3>;
+            bindings = <&RGB_layer3>;
             key-positions = <37 40>;
         };
 
@@ -63,19 +63,19 @@
             // -----------------------------------------------------------------------------------------
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &to 2  &kp SPACE    &kp RET  &to 1  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T        &kp Y    &kp U        &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp G        &kp H    &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B        &kp N    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &RGB_layer2  &kp SPACE    &kp RET  &RGB_layer1  &kp RALT
             >;
         };
 
         numbers {
             bindings = <
-&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6          &kp N7          &kp N8        &kp N9     &kp N0  &trans
-&trans  &trans        &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans        &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans     &trans  &trans
-                              &trans  &to 0   &trans    &trans          &to 0           &trans
+&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4              &kp N5    &kp N6          &kp N7              &kp N8        &kp N9     &kp N0  &trans
+&trans  &trans        &trans  &trans  &trans              &trans    &kp LEFT_ARROW  &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans        &trans  &trans  &trans              &trans    &trans          &trans              &trans        &trans     &trans  &trans
+                              &trans  &RGB_Layer_default  &trans    &trans          &RGB_Layer_default  &trans
             >;
         };
 
