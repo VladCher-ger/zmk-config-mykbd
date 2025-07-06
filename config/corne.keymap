@@ -30,27 +30,7 @@
         };
     };
 
-    underglow-layer {
-        compatible  = "zmk,underglow-layer";
-
-        default_layer {
-            bindings = <
-                   // -----------------------------------------------------------------------------------------
-
-                bindings = <
-                // | Tab  |  Q      |  W      |   E   |  R     |  T     |      |  Y    |  U     |  I     |  O      |  P    |  BSPC   |
-                    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___        &ug ___  &ug ___  &ug ___  &ug ___  &ug ___   ug ___
-                // | CTRL |  A      |  S      |  D    |  F     |  G     |      |  H    |  J     |  K     |  L      |  ;    |  '      |
-                    &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___        &ug ___  &ug ___  &ug ___  &ug ___  &ug ___   ug ___
-                // | SHFT |  Z      |  X      |  C    |  V     |  B     |      |  N    |  M     |  ,      |  .     |  /     | ESC    |
-                    &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___        &ug ___  &ug ___  &ug ___  &ug ___  &ug ___   ug ___
-
-                //                  | GUI    | Lay2   | SPC      |             | ENT   | Lay1   | ALT     |
-                                      &ug ___  &ug ___  &ug ___                  &ug ___   &to 1   &ug ___
-            >;
-            
-        };
-    };
+    
 
     keymap {
         compatible = "zmk,keymap";
