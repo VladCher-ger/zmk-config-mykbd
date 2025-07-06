@@ -19,7 +19,6 @@
         compatible = "zmk,rgb-underglow";
         status = "okay";
         label = "RGB_UNDERGLOW";
-        chain-length = <10>; // Number of LEDs
         color-map = <0x000000>; // Default: Black (off)
     };
 };
@@ -34,26 +33,6 @@
         };
     };
 
-
-
-    behaviors {
-        // Define RGB behaviors for each layer
-        rgb_layer_default: rgb_layer_default {
-            compatible = "zmk,behavior-rgb-underglow";
-            #binding-cells = <2>;
-            rgb-values = <&rgb_ug RGB_COLOR_HSV(0, 0, 0)>;  // Default: OFF (or set a base color)
-        };
-        rgb_layer1: rgb_layer1 {
-            compatible = "zmk,behavior-rgb-underglow";
-            #binding-cells = <2>;
-            rgb-values = <&rgb_ug RGB_COLOR_HSV(120, 100, 100)>;  // Layer 1: Green
-        };
-        rgb_layer2: rgb_layer2 {
-            compatible = "zmk,behavior-rgb-underglow";
-            #binding-cells = <2>;
-            rgb-values = <&rgb_ug RGB_COLOR_HSV(240, 100, 100)>;  // Layer 2: Blue
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -71,7 +50,7 @@
 
                 //                  | GUI   | Lay2  | SPC      |   | ENT   | Lay1  | ALT     |
                                     &kp LGUI  &to 2  &kp SPACE      &kp RET  &to 1   &kp RALT
-            &rgb_layer_default 0 0
+            &rgb_ug RGB_COLOR_HSV(0, 0, 0)
             >;
         };
 
@@ -96,7 +75,7 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
-            &rgb_layer1 0 0
+            &rgb_ug RGB_COLOR_HSV(120, 100, 100)
             >;
         };
 
@@ -112,7 +91,7 @@
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &trans          &trans    &trans    &trans    &trans     &trans  &trans
                                               &kp LGUI         &trans           &kp SPACE       &kp RET   &trans    &kp RALT
-            &rgb_layer2 0 0
+            &rgb_ug RGB_COLOR_HSV(240, 100, 100)
             >;
         };
     };
