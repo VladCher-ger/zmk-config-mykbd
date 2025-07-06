@@ -17,7 +17,11 @@
 #define ug rgb_ug 
 
 #ifndef LAYER_Lower
-#define LAYER_Lower 0
+#define LAYER_Lower 1
+#endif
+
+#ifndef default_layer
+#define default_layer 0
 #endif
 
 / {
