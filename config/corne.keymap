@@ -14,8 +14,8 @@
 
 &led_strip { chain-length = <27>; };
 
-#ifndef LAYER_Lower
-#define LAYER_Lower 0
+#define rgb_ug ug;
+
 #endif
 
 / {
