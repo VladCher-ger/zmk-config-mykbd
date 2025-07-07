@@ -87,19 +87,19 @@
             // -----------------------------------------------------------------------------------------
 
             bindings = <
-&HT LEFT_BRACE LEFT_PARENTHESIS  &HT EXCLAMATION Q   &HT AT_SIGN W           &HT HASH E          &HT DOLLAR R          &HT PERCENT T    &HT CARET Y  &HT AMPERSAND U        &HT ASTERISK I       &HT MINUS O              &HT EQUAL P                  &HT RIGHT_BRACE RIGHT_PARENTHESIS
-&kp MINUS                        &HR_MOD LEFT_ALT A  &HR_MOD LEFT_CONTROL S  &HR_MOD LEFT_GUI D  &HR_MOD LEFT_SHIFT F  &kp G            &kp H        &HR_MOD RIGHT_SHIFT J  &HR_MOD RIGHT_WIN K  &HR_MOD RIGHT_CONTROL L  &HR_MOD RIGHT_ALT SEMICOLON  &kp SQT
-&kp LEFT_BRACKET                 &kp Z               &kp X                   &kp C               &kp V                 &kp B            &kp N        &kp M                  &kp COMMA            &kp DOT                  &kp FSLH                     &kp RIGHT_BRACKET
-                                                                             &kp TAB             &RGB_layer1           &kp SPACE        &kp RET      &RGB_layer2            &kp ESCAPE
+&HT LEFT_BRACE LEFT_PARENTHESIS  &HT NUMBER_1 Q      &HT NUMBER_2 W          &HT NUMBER_3 E      &HT NUMBER_4 R        &HT N5 T     &HT NUMBER_6 Y  &HT N7 U               &HT N8 I             &HT N9 O                 &HT N0 P                     &HT RIGHT_BRACE RIGHT_PARENTHESIS
+&kp MINUS                        &HR_MOD LEFT_ALT A  &HR_MOD LEFT_CONTROL S  &HR_MOD LEFT_GUI D  &HR_MOD LEFT_SHIFT F  &kp G        &kp H           &HR_MOD RIGHT_SHIFT J  &HR_MOD RIGHT_WIN K  &HR_MOD RIGHT_CONTROL L  &HR_MOD RIGHT_ALT SEMICOLON  &kp SQT
+&kp LEFT_BRACKET                 &kp Z               &kp X                   &kp C               &kp V                 &kp B        &kp N           &kp M                  &kp COMMA            &kp DOT                  &kp FSLH                     &kp RIGHT_BRACKET
+                                                                             &kp TAB             &RGB_layer1           &kp SPACE    &kp RET         &RGB_layer2            &kp ESCAPE
             >;
         };
 
         numbers {
             bindings = <
-&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp N4              &kp N5    &kp N6  &kp N7              &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans        &trans  &trans  &trans              &trans    &trans  &trans              &trans  &trans  &trans  &trans
-&trans  &trans        &trans  &trans  &trans              &trans    &trans  &trans              &trans  &trans  &trans  &trans
-                              &trans  &RGB_Layer_default  &trans    &trans  &RGB_Layer_default  &trans
+&trans  &trans  &trans  &trans  &trans              &trans    &trans    &trans              &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans    &kp LEFT  &kp DOWN            &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans    &trans    &trans              &trans  &trans     &trans  &trans
+                        &trans  &RGB_Layer_default  &trans    &trans    &RGB_Layer_default  &trans
             >;
         };
 
