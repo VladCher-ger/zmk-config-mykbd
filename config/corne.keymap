@@ -19,11 +19,6 @@
             bindings = <&RGB_layer3>;
             key-positions = <37 40>;
         };
-
-        Backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <38 39>;
-        };
     };
 
     macros {
@@ -87,18 +82,18 @@
             // -----------------------------------------------------------------------------------------
 
             bindings = <
-&HT LEFT_BRACE LEFT_PARENTHESIS  &HT NUMBER_1 Q      &HT NUMBER_2 W          &HT NUMBER_3 E      &HT NUMBER_4 R        &HT N5 T     &HT NUMBER_6 Y  &HT N7 U               &HT N8 I             &HT N9 O                 &HT N0 P                     &HT RIGHT_BRACE RIGHT_PARENTHESIS
-&kp MINUS                        &HR_MOD LEFT_ALT A  &HR_MOD LEFT_CONTROL S  &HR_MOD LEFT_GUI D  &HR_MOD LEFT_SHIFT F  &kp G        &kp H           &HR_MOD RIGHT_SHIFT J  &HR_MOD RIGHT_WIN K  &HR_MOD RIGHT_CONTROL L  &HR_MOD RIGHT_ALT SEMICOLON  &kp SQT
-&kp LEFT_BRACKET                 &kp Z               &kp X                   &kp C               &kp V                 &kp B        &kp N           &kp M                  &kp COMMA            &kp DOT                  &kp FSLH                     &kp RIGHT_BRACKET
-                                                                             &kp TAB             &RGB_layer1           &kp SPACE    &kp RET         &RGB_layer2            &kp ESCAPE
+&HT TAB LEFT_PARENTHESIS  &HT NUMBER_1 Q      &HT NUMBER_2 W          &HT NUMBER_3 E      &HT NUMBER_4 R        &HT N5 T     &HT NUMBER_6 Y  &HT N7 U               &HT N8 I             &HT N9 O                 &HT N0 P                     &HT ESCAPE RIGHT_PARENTHESIS
+&kp MINUS                 &HR_MOD LEFT_ALT A  &HR_MOD LEFT_CONTROL S  &HR_MOD LEFT_GUI D  &HR_MOD LEFT_SHIFT F  &kp G        &kp H           &HR_MOD RIGHT_SHIFT J  &HR_MOD RIGHT_WIN K  &HR_MOD RIGHT_CONTROL L  &HR_MOD RIGHT_ALT SEMICOLON  &kp SQT
+&kp LEFT_BRACKET          &kp Z               &kp X                   &kp C               &kp V                 &kp B        &kp N           &kp M                  &kp COMMA            &kp DOT                  &kp FSLH                     &kp RIGHT_BRACKET
+                                                                      &kp BACKSLASH       &RGB_layer1           &kp SPACE    &kp RET         &RGB_layer2            &kp BACKSPACE
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans              &trans    &trans    &trans              &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans    &kp LEFT  &kp DOWN            &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans    &trans    &trans              &trans  &trans     &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5              &kp F6    &kp F7    &kp F8              &kp F9  &kp F10    &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans              &trans    &kp LEFT  &kp DOWN            &kp UP  &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans              &trans    &trans    &trans              &trans  &trans     &trans   &trans
                         &trans  &RGB_Layer_default  &trans    &trans    &RGB_Layer_default  &trans
             >;
         };
