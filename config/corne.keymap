@@ -82,19 +82,19 @@
             // -----------------------------------------------------------------------------------------
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F          &kp P        &kp B                 &kp J      &kp L        &kp U          &kp Y    &kp SEMI  &kp LGUI
-&kp LALT   &kp A  &kp R  &kp S          &kp T        &kp G                 &kp M      &kp N        &kp E          &kp I    &kp O     &kp APOS
-&kp LCTRL  &kp Z  &kp X  &kp C          &kp D        &kp V                 &kp K      &kp H        &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
-                         &kp BACKSLASH  &RGB_layer1  &HT LEFT_SHIFT RET    &kp SPACE  &RGB_layer2  &kp BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp F         &kp P        &kp B                 &kp J             &kp L        &kp U          &kp Y    &kp SEMI  &kp BACKSPACE
+&kp LALT   &kp A  &kp R  &kp S         &kp T        &kp G                 &kp M             &kp N        &kp E          &kp I    &kp O     &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp D        &kp V                 &kp K             &kp H        &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
+                         &kp LEFT_WIN  &RGB_layer1  &HT LEFT_SHIFT RET    &HT RSHIFT SPACE  &RGB_layer2  &kp RIGHT_WIN
             >;
         };
 
         numbers {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5              &kp F6    &kp F7    &kp F8              &kp F9  &kp F10    &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans              &trans    &kp LEFT  &kp DOWN            &kp UP  &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans              &trans    &trans    &trans              &trans  &trans     &trans   &trans
-                        &trans  &RGB_Layer_default  &trans    &trans    &RGB_Layer_default  &trans
+&trans  &kp EXCL     &kp AT      &kp LBKT              &kp RBKT               &kp PIPE     &kp EQUAL  &kp N7              &kp N8  &kp N9  &kp ASTRK  &trans
+&trans  &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp DOT    &kp N4              &kp N5  &kp N6  &kp PLUS   &trans
+&trans  &kp PERCENT  &kp CARET   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE    &kp N0     &kp N1              &kp N2  &kp N3  &kp SLASH  &trans
+                                 &trans                &RGB_Layer_default     &trans       &trans     &RGB_Layer_default  &trans
             >;
         };
 
