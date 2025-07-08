@@ -78,14 +78,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        colemak-dh {
             // -----------------------------------------------------------------------------------------
 
             bindings = <
-&HT TAB LEFT_PARENTHESIS  &HT NUMBER_1 Q      &HT NUMBER_2 W          &HT NUMBER_3 E      &HT NUMBER_4 R        &HT N5 T     &HT NUMBER_6 Y  &HT N7 U               &HT N8 I             &HT N9 O                 &HT N0 P                     &HT ESCAPE RIGHT_PARENTHESIS
-&kp MINUS                 &HR_MOD LEFT_ALT A  &HR_MOD LEFT_CONTROL S  &HR_MOD LEFT_GUI D  &HR_MOD LEFT_SHIFT F  &kp G        &kp H           &HR_MOD RIGHT_SHIFT J  &HR_MOD RIGHT_WIN K  &HR_MOD RIGHT_CONTROL L  &HR_MOD RIGHT_ALT SEMICOLON  &kp SQT
-&kp LEFT_BRACKET          &kp Z               &kp X                   &kp C               &kp V                 &kp B        &kp N           &kp M                  &kp COMMA            &kp DOT                  &kp FSLH                     &kp RIGHT_BRACKET
-                                                                      &kp BACKSLASH       &RGB_layer1           &kp SPACE    &kp RET         &RGB_layer2            &kp BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp F          &kp P        &kp B                 &kp J      &kp L        &kp U          &kp Y    &kp SEMI  &kp LGUI
+&kp LALT   &kp A  &kp R  &kp S          &kp T        &kp G                 &kp M      &kp N        &kp E          &kp I    &kp O     &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C          &kp D        &kp V                 &kp K      &kp H        &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
+                         &kp BACKSLASH  &RGB_layer1  &HT LEFT_SHIFT RET    &kp SPACE  &RGB_layer2  &kp BACKSPACE
             >;
         };
 
