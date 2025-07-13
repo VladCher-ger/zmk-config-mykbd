@@ -74,7 +74,7 @@
 &kp TAB    &kp Q  &kp W  &kp F                &kp P        &kp B                 &kp J             &kp L        &kp U          &kp Y    &kp SEMI   &kt ESCAPE
 &kp LALT   &kp A  &kp R  &kp S                &kp T        &kp G                 &kp M             &kp N        &kp E          &kp I    &kp O      &kp APOS
 &kp LCTRL  &kp Z  &kp X  &kp C                &kp D        &kp V                 &kp K             &kp H        &kp COMMA      &kp DOT  &kp SLASH  &kp RCTRL
-                         &HT LEFT_WIN DELETE  &RGB_layer1  &HT LEFT_SHIFT RET    &HT RSHIFT SPACE  &RGB_layer2  &kp BACKSPACE
+                         &HT LEFT_WIN DELETE  &RGB_layer3  &HT LEFT_SHIFT RET    &HT RSHIFT SPACE  &RGB_layer2  &kp BACKSPACE
             >;
         };
 
@@ -110,10 +110,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB      &kp N1           &kp N2           &kp N3           &kp N4              &kp N5          &kp N6    &kp N7              &kp N8  &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3        &bt BT_SEL 4    &kp LEFT  &kp DOWN            &kp UP  &kp RIGHT  &trans  &trans
-&bootloader  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF     &trans          &trans    &trans              &trans  &trans     &trans  &bootloader
-                                               &trans           &RGB_Layer_default  &trans          &trans    &RGB_Layer_default  &trans
+&kp TAB      &kp N1           &kp N2           &kp N3           &kp N4              &kp N5          &kp N6      &kp N7              &kp N8  &kp N9     &kp N0  &kp BSPC
+&bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3        &bt BT_SEL 4    &kp LEFT    &kp DOWN            &kp UP  &kp RIGHT  &trans  &trans
+&bootloader  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF     &sys_reset      &sys_reset  &trans              &trans  &trans     &trans  &bootloader
+                                               &trans           &RGB_Layer_default  &trans          &trans      &RGB_Layer_default  &trans
             >;
         };
     };
