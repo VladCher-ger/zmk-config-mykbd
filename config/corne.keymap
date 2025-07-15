@@ -30,7 +30,6 @@
 
 &led_strip { chain-length = <27>; };
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -94,7 +93,7 @@
 &kp TAB    &kp Q  &kp W  &kp F                &kp P        &kp B                 &kp J             &kp L        &kp U          &kp Y    &kp SEMI   &kt ESCAPE
 &kp LALT   &kp A  &kp R  &kp S                &kp T        &kp G                 &kp M             &kp N        &kp E          &kp I    &kp O      &kp APOS
 &kp LCTRL  &kp Z  &kp X  &kp C                &kp D        &kp V                 &kp K             &kp H        &kp COMMA      &kp DOT  &kp SLASH  &kp RCTRL
-                         &HT LEFT_WIN DELETE  &RGB_layer3  &HT LEFT_SHIFT RET    &HT RSHIFT SPACE  &RGB_layer2  &kp BACKSPACE
+                         &HT LEFT_WIN DELETE  &RGB_layer1  &HT LEFT_SHIFT RET    &HT RSHIFT SPACE  &RGB_layer2  &kp BACKSPACE
             >;
         };
 
